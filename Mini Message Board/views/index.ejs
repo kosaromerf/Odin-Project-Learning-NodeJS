@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <% messages.map(message => { %>
+    <p><%= message.user%></p>
+    <p><%= message.added%></p>
+    <p><%= message.text%></p>
+    <% }); %>
+    <a href="/new">New Message</a>
+  </body>
+</html>
